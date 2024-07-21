@@ -1,0 +1,27 @@
+tags:
+  - name: GetGroupInfo
+
+produces:
+  - application/json
+  - application/xml
+
+parameters:
+  - name: group_id
+    in: path
+    description: 'group_id'
+    required: true
+    example:
+      info: 'Get group info from database'
+    schema:
+      type: string
+      properties:
+        name:
+          type: string
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

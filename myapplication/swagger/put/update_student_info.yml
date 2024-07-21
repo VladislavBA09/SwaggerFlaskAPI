@@ -1,0 +1,36 @@
+tags:
+  - name: UpdateInfoForStudent
+
+produces:
+  - application/json
+  - application/xml
+
+parameters:
+  - name: student_id
+    in: path
+    required: true
+    example:
+      info: 'Students ID'
+    schema:
+      type: string
+      properties:
+        student_id:
+          type: int
+  - name: data
+    in: formData
+    description: 'Data for students'
+    required: true
+    schema:
+      type: object
+      properties:
+        data:
+          type: string
+
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

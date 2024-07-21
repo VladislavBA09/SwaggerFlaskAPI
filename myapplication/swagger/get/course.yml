@@ -1,0 +1,30 @@
+tags:
+  - name: GetInfoCourse
+
+produces:
+  - application/json
+  - application/xml
+
+
+parameters:
+  - name: course_id
+    in: path
+    description: 'course_id'
+    required: true
+    example:
+      info: '1: Algebra, 
+             2: Biology'
+    schema:
+      type: string
+      properties:
+        name:
+          type: string
+
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

@@ -1,0 +1,25 @@
+tags:
+  - name: CreateNewCourse
+
+produces:
+  - application/json
+  - application/xml
+
+parameters:
+  - name: data
+    in: formData
+    description: 'Create new course'
+    required: true
+    schema:
+      type: object
+      properties:
+        data:
+          type: string
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

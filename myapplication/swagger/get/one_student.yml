@@ -1,0 +1,28 @@
+tags:
+  - name: StudentInfo
+
+produces:
+  - application/json
+  - application/xml
+
+parameters:
+  - name: student_id
+    in: path
+    description: 'student_id'
+    required: true
+    example:
+      info: 'Info about the student by his ID'
+    schema:
+      type: string
+      properties:
+        name:
+          type: string
+
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

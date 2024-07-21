@@ -1,0 +1,44 @@
+tags:
+  - name: CreateNewStudent
+
+produces:
+  - application/json
+  - application/xml
+
+
+parameters:
+  - name: group_id
+    in: formData
+    description: 'Group_id of the student'
+    required: true
+    schema:
+      type: object
+      properties:
+        group_id:
+          type: int
+  - name: first_name
+    in: formData
+    description: 'First name of the student'
+    required: true
+    schema:
+      type: object
+      properties:
+        first_name:
+          type: string
+  - name: last_name
+    in: formData
+    description: 'Last name of the student'
+    required: true
+    schema:
+      type: object
+      properties:
+        last_name:
+          type: string
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

@@ -1,0 +1,38 @@
+tags:
+  - name: DeleteStudentFromCourse
+
+produces:
+  - application/json
+  - application/xml
+
+parameters:
+  - name: course_id
+    in: path
+    description: 'course_id'
+    required: true
+    example:
+      info: 'Course number'
+    schema:
+      type: string
+      properties:
+        name:
+          type: string
+  - name: student_id
+    in: path
+    description: 'student_id'
+    required: true
+    example:
+      info: 'Student number'
+    schema:
+      type: string
+      properties:
+        name:
+          type: string
+
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
