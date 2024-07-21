@@ -16,15 +16,15 @@ Key Features
 
 1. Clone the repository: bashCopy code  git clone https://github.com/VladislavBA09/SwaggerFlaskAPI.git
 
-2. Navigate to the project directory: bashCopy code  cd SwaggerFlaskAPI
+2. Navigate to the project directory: cd SwaggerFlaskAPI
    
-3. Create and activate a virtual environment: bashCopy code  python -m venv venv
+3. Create and activate a virtual environment: python -m venv venv
 
 4. source venv/bin/activate  # Use `venv\Scripts\activate` for Windows
    
-5. Install dependencies: bashCopy code  pip install -r requirements.txt
+5. Install dependencies: pip install -r requirements.txt
    
-6. Run the Flask server: bashCopy code  flask run
+6. Run the Flask server: python start.py
    
 7. Open Swagger UI: Visit http://localhost:5000/swagger to view and test the API through the interactive Swagger interface.
 
